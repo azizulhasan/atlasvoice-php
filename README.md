@@ -139,4 +139,4 @@ composer test:live   # also calls the real service's public routes
 
 ## License
 
-GPL-3.0-or-later. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). The AtlasVoice WordPress plugin bundles this client under its own GPL licence; MIT is compatible with that.

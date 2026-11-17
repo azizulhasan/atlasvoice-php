@@ -12,3 +12,4 @@ WordPress plugin (libs/AtlasVoice/Sdk); the plugin now copies it from here.
   follows a redirect), a memory state store, a key store that refuses browser keys, and
   `Plain_Php::client()` to get a working client in one call.
 - Tests run without WordPress (PHPUnit, PHP 7.4 to 8.4), plus live checks of the public routes.
+- MIT licence, so any app (open or closed source) can use it.

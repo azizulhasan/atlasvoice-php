@@ -2,7 +2,7 @@
     "name": "atlasaidev/atlasvoice-sdk",
     "description": "PHP client for AtlasVoice Cloud text-to-speech: speech, audio jobs for long texts, voices, usage and licences. Works in WordPress, Laravel and plain PHP.",
     "type": "library",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "keywords": [
         "text-to-speech",
         "tts",
