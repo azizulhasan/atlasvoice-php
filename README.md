@@ -68,15 +68,15 @@ if ( 'done' === $status->data['job']['status'] ) {
 Ask again no sooner than the `poll_after_ms` the service returns. Check the file's `bytes` and
 `sha256` before you store it.
 
-**Natural voices (Premium):** pass `'engine' => 'cloud'` and a `'voice'` id from `voices()`, with
-the voice's full locale as the language (`'en-US'`, not `'en'`).
+**Natural voices (Premium):** pass `'engine' => 'cloud'` and a `'voice'` id from
+`voices( $lang, 'cloud' )`, with that voice's `locale` as the language (`'en-US'`, not `'en'`).
 
 ## Voices
 
 ```php
 $all     = $voice->voices();                 // every voice (no key is sent)
 $english = $voice->voices( 'en' );           // one language
-$natural = $voice->voices( 'en', 'cloud' );  // one language and engine
+$natural = $voice->voices( 'en', 'cloud' );  // the Premium natural voices: id, name, locale, gender
 ```
 
 Voices change rarely: keep the list for a while instead of asking on every page.
