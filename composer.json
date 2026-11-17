@@ -1,0 +1,51 @@
+{
+    "name": "atlasaidev/atlasvoice-sdk",
+    "description": "PHP client for AtlasVoice Cloud text-to-speech: speech, audio jobs for long texts, voices, usage and licences. Works in WordPress, Laravel and plain PHP.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "keywords": [
+        "text-to-speech",
+        "tts",
+        "atlasvoice",
+        "audio",
+        "accessibility",
+        "sdk"
+    ],
+    "homepage": "https://atlasvoice.cloud",
+    "authors": [
+        {
+            "name": "AtlasAiDev",
+            "homepage": "https://atlasaidev.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "suggest": {
+        "ext-curl": "Needed for the plain-PHP adapters (Curl_Transport, Plain_Php); not needed inside WordPress."
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AtlasVoice\\Sdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AtlasVoice\\Sdk\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:live": [
+            "@putenv ATLASVOICE_LIVE=1",
+            "phpunit --group live"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
